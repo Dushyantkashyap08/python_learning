@@ -10,16 +10,14 @@
         
 #check the line number where "python" is present
 
-with open("log.txt") as f:
-    lines = f.readline()
+with open("/home/dushyant_new/python/file_input_output/problems/log.txt") as f:
+    lines = f.readlines()
     
-    line = 1
+    lineno = 1
     for line in lines:
         if"python" in line:
-            print(f"yes python is present in line number {line}")
+            print(f"yes python is present in line number {lineno}")
             break
-        else:
-            print("no")
-        line+=1
+        lineno+=1
     else:
         print("not present")

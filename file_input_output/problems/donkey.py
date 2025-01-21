@@ -1,6 +1,6 @@
 import time
 
-with open("donkey.txt", "r") as f:
+with open("/home/dushyant_new/python/file_input_output/problems/donkey.txt", "r") as f:
     content = f.read()
     print(content)
 
@@ -8,7 +8,7 @@ with open("donkey.txt", "r") as f:
     print("UPDATING THE CONTENT IN THE FILE...")
     time.sleep(5)
     print("FILE UPDATED")
-    with open("donkey.txt", "w") as f:
+    with open("/home/dushyant_new/python/file_input_output/problems/donkey.txt", "w") as f:
         f.write(updated_content)
         print(updated_content)
         

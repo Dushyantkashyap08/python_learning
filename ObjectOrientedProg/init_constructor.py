@@ -8,7 +8,7 @@ class Student:
     grade = "A"
     
     def __init__(self, name, subject , grade):
-        print("I am getting called everytime an obejct is getting created")
+        print("I am getting called everytime an obejct is created")
         self.name = name
         self.subject = subject
         self.grade = grade
@@ -23,5 +23,6 @@ class Student:
     
 student1 = Student("dushyant", "python", "A") #now when we set the value of name, subject and grade in init method ,we are passing them as arguments during function call
 print(student1.name, student1.subject, student1.grade)
-student1
+student1.getInfo()
+student1.greet()
 

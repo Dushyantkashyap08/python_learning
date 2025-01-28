@@ -1,16 +1,15 @@
 #create a class Employee and add salary and increment properties to it
 
 class Employee:
-    def __init__(self, sal):
+    def __init__(self, sal, increment):
         self.sal = sal
+        self.increment = increment
         
-    def salary(self):
-        print(f"my salary is {self.sal}")
-        
-    def increment(self):
-        self.sal = self.sal + (self.sal * 0.1)
-        return self.sal
+    @property
+    def salaryAfterIncrement(self):
+        return self.sal+self.sal*(self.increment/100)
 
-e = Employee(10000)
-e.salary()
-print(e.increment())
+e = Employee(10000, 20)
+print(e.sal)
+print(e.salaryAfterIncrement)
+print(e.increment)
